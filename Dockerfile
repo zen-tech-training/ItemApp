@@ -1,4 +1,4 @@
-FROM openjdk:17
+FROM alpine/java:21-jdk
 ADD target/ItemApp-0.0.1-SNAPSHOT.jar ItemApp.jar
 ENTRYPOINT ["java", "-jar", "ItemApp.jar"]
 EXPOSE 9999
